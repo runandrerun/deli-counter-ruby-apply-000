@@ -2,9 +2,12 @@
 
 # take_a_number method accepts the current line (array), and the name of a new customer which is pushed into the array (shovel '<<' to array [katz_deli]). Then uses string interporlation to puts out the customer name, and their place in line.
 
-def take_a_number(katz_deli, customer)
-  katz_deli << customer
-  
+def take_a_number(katz_deli)
+  number = 0
+  if katz_deli.length == 0
+    katz_deli << number += 1
+  else 
+    return number
   puts "Welcome, #{customer}. You are number #{katz_deli.length} in line."
 end
 
