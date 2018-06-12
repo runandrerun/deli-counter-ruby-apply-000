@@ -21,6 +21,8 @@ def line(katz_deli)
   end
 end
 
+# This method calls who is currently being served in the line by reading the array. If the length is at 0, i.e. nothing in the array, the method will puts "There is nobody waiting to be served!" Else, it will call who is being served. Using .shift 
+
 def now_serving(katz_deli)
   if katz_deli.length == 0
     puts "There is nobody waiting to be served!"
