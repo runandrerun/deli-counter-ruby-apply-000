@@ -1,11 +1,13 @@
 # Write your code here.
 
-# Accepts the current line (array), and the name of a new customer(shovel '<<' to array [katz_deli]) 
+# Accepts the current line (array), and the name of a new customer(shovel '<<' to array [katz_deli]). Then use string interporlation to puts it out the customer name, and place in line.
 
 def take_a_number(katz_deli, customer)
   katz_deli << customer
   puts "Welcome, #{customer}. You are number #{katz_deli.length} in line."
 end
+
+# Line method accepts the current array (katz_deli). If it's empty, it will state that the line is empty (puts). If not, it will list who is in line by iterating over the array. value = customer name, index = line in the array (+1 because indices start at 0). 
 
 def line(katz_deli)
   if katz_deli.length == 0
