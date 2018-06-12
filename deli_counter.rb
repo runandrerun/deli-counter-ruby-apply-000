@@ -7,7 +7,7 @@ def take_a_number(katz_deli, customer)
   puts "Welcome, #{customer}. You are number #{katz_deli.length} in line."
 end
 
-# Line method accepts the current array (katz_deli). If it's empty, it will state that the line is empty (puts). If not, it will list who is in line by iterating over the array. value = customer name, index = line in the array (+1 because indices start at 0). 
+# Line method accepts the current array (katz_deli). If it's empty, it will state that the line is empty (puts). If not, it will list who is in line by iterating over the array. value = customer name, index = line in the array (+1 because indices start at 0). .each_with_index enumerator puts out index. 
 
 def line(katz_deli)
   if katz_deli.length == 0
