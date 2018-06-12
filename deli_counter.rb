@@ -1,6 +1,6 @@
 # Write your code here.
 
-# Accepts the current line (array), and the name of a new customer(shovel '<<' to array [katz_deli]). Then use string interporlation to puts it out the customer name, and place in line.
+# take_a_number method accepts the current line (array), and the name of a new customer which is pushed into the array (shovel '<<' to array [katz_deli]). Then uses string interporlation to puts out the customer name, and their place in line.
 
 def take_a_number(katz_deli, customer)
   katz_deli << customer
@@ -21,7 +21,7 @@ def line(katz_deli)
   end
 end
 
-# This method calls who is currently being served in the line by reading the array. If the length is at 0, i.e. nothing in the array, the method will puts "There is nobody waiting to be served!" Else, it will call who is being served. Using .shift 
+# This method calls who is currently being served in the line by reading the array. If the length is at 0, i.e. nothing in the array, the method will puts "There is nobody waiting to be served!" Else, it will call who is being served. Using .shift retrieves, and REMOVES, the first item in the array. 
 
 def now_serving(katz_deli)
   if katz_deli.length == 0
