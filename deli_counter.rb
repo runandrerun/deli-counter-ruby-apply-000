@@ -1,5 +1,7 @@
 # Write your code here.
 
+# Accepts the current line (array), and the name of a new customer(shovel '<<' to array [katz_deli]) 
+
 def take_a_number(katz_deli, customer)
   katz_deli << customer
   puts "Welcome, #{customer}. You are number #{katz_deli.length} in line."
